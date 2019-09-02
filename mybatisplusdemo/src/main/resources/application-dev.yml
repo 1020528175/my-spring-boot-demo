@@ -1,0 +1,16 @@
+server:
+  port: 5188
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.101:3306/mp
+    username: mybatisplus
+    password: mybatisplus
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      table-prefix: tab_
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: cn.masterj.mybatisplus.user.entity
