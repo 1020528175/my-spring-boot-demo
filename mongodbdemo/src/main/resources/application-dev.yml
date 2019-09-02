@@ -1,0 +1,20 @@
+server:
+  port: 5188
+
+spring:
+  data:
+    mongodb:
+      database: demo_test
+      uri: mongodb://demo:demo@192.168.1.101:27017/demo_test
+
+
+
+#设置打印MongoDB的sql日志
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core: debug
+
